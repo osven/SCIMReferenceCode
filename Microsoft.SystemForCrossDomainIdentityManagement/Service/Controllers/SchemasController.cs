@@ -20,6 +20,7 @@ namespace Microsoft.SCIM
         {
         }
 
+        [HttpGet]
         public QueryResponseBase Get()
         {
             string correlationIdentifier = null;

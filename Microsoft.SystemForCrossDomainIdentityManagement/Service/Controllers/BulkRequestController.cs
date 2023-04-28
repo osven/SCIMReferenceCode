@@ -23,7 +23,8 @@ namespace Microsoft.SCIM
         {
         }
 
-        public async Task<BulkResponse2> Post([FromBody] BulkRequest2 bulkRequest)
+      [HttpPost]
+      public async Task<BulkResponse2> Post([FromBody] BulkRequest2 bulkRequest)
         {
             string correlationIdentifier = null;
 
